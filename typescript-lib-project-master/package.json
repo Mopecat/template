@@ -1,7 +1,7 @@
 {
-  "name": "ts-lib-project",
+  "name": "{{name}}",
   "version": "0.0.3",
-  "description": "ts-lib-project",
+  "description": "{{description}}",
   "keywords": [],
   "main": "dist/ts-lib-project.umd.js",
   "module": "lib/index.js",
@@ -10,7 +10,8 @@
     "dist",
     "lib"
   ],
-  "author": "ediaos <ediaos@live.com>",
+  "email": "{{email}}",
+  "author": "{{author}}",
   "repository": {
     "type": "git",
     "url": ""
