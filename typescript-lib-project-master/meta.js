@@ -64,6 +64,7 @@ module.exports = {
      */
     const green = chalk.green // 取绿色
     const cwd = path.join(process.cwd(), data.inPlace ? '' : data.destDirName)
+    console.log(data)
     if (data.autoInstall) {
       installDependencies(cwd, 'npm', green) // 这里使用npm安装
         .then(() => {
