@@ -36,7 +36,7 @@ module.exports = {
       message: '是否自动执行npm install 安装依赖？',
     },
   },
-  complete: function(data, { chalk },spinner) {
+  complete: function(data, { chalk },destination) {
     /**
      * 用于判断是否执行自动安装依赖
      */
@@ -45,8 +45,11 @@ module.exports = {
     if (data.autoInstall) {
       installDependencies(cwd, 'npm', green) // 这里使用npm安装
         .then(() => {
-          spinner.stop()
-          console.log('依赖安装完成')
+          console.log()
+          console.log(chalk.green('构建完成'))
+          console.log()
+          console.log((`${chalk.green('去=>')} ${destination} ${chalk.green('愉快的开始coding吧~')}`))
+          console.log()
         })
         .catch(e => {
           console.log(chalk.red('Error:'), e)
