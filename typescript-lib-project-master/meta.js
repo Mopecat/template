@@ -55,7 +55,11 @@ module.exports = {
           console.log(chalk.red('Error:'), e)
         })
     } else {
-      // printMessage(data, chalk)
+      console.log()
+      console.log(chalk.green('构建完成'))
+      console.log()
+      console.log((`${chalk.green('去=>')} ${destination} ${chalk.green('愉快的开始coding吧~')}`))
+      console.log()
     }
   }
 }
