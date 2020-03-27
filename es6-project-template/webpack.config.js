@@ -15,7 +15,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: "/.js$/",
+        test: /\.js$/,
         use: {
           loader: "babel-loader"
         }
@@ -30,7 +30,7 @@ module.exports = {
     compress: true,
     // 出现编译错误时直接出现在页面上
     overlay: true,
-    // 清空过多的输出信息 美化输出信息可以用friendly-errors-webpack-plugin 
+    // 清空过多的输出信息 美化输出信息可以用friendly-errors-webpack-plugin
     quiet: true
   }
 };
