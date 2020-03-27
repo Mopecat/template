@@ -1,0 +1,92 @@
+{
+  //主题设置
+  // "workbench.colorTheme": "Monokai",
+  // 默认编辑器字号
+  "editor.fontSize": 14,
+  //是否自动换行 
+  "editor.wordWrap": "on",
+  // tab几个缩进
+  "editor.tabSize": 2,
+  // 文件自动保存
+  "files.autoSave": "afterDelay",
+  // 自动格式化粘贴的代码
+  "editor.formatOnPaste": true,
+  // 在资源管理器删除内容时候是否进行用户提醒
+  "explorer.confirmDelete": false,
+  // 控制在资源管理器内拖放移动文件或文件夹时是否进行确认
+  "explorer.confirmDragAndDrop": false,
+  // 在资源管理器拖拽文件是否进行用户提醒
+  "workbench.statusBar.visible": true,
+  // 工作区缩放级别
+  "window.zoomLevel": 0,
+  // 重命名或移动文件时，启用或禁用自动更新导入路径
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // 启用/禁用导航路径
+  "breadcrumbs.enabled": true,
+  // 终端cmd字号
+  "terminal.integrated.fontSize": 16,
+  // 不检查缩进，保存后统一按设置项来设置
+  "editor.detectIndentation": false,
+  // 编辑器初始界面
+  "workbench.startupEditor": "newUntitledFile",
+  // 工作台状态栏是否可见
+  "workbench.statusBar.feedback.visible":false,
+  // 添加多个光标时候需要的快捷键
+  "editor.multiCursorModifier": "ctrlCmd",
+  // 自定义代码片段显示的位置
+  "editor.snippetSuggestions": "top",
+  "window.menuBarVisibility": "toggle",
+  // 启用后，按下 TAB 键，将展开 Emmet 缩写。
+  "emmet.triggerExpansionOnTab": true,
+  // 控制编辑器在空白字符上显示符号的方式
+  "editor.renderWhitespace": "all",
+  // 控制编辑器是否应呈现空白字符
+  "editor.renderControlCharacters": false,
+  // 在文件和文件夹上显示错误和警告
+  "problems.decorations.enabled": false,
+  // html文件格式化程序
+  "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features",
+      // 禁止eslint对html进行校验
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false
+      }
+  },
+  // "[javascript]": {
+  //     "editor.defaultFormatter": "vscode.typescript-language-features"
+  // },
+
+  // vscode-fileheader  -----settings begin-----
+
+  // 文件作者
+  "fileheader.Author": "JiaoShouf2e",
+  // 文件最后修改者
+  "fileheader.LastModifiedBy": "JiaoShouf2e",
+  
+  // vscode-fileheader  -----settings end-----
+
+  
+  //stylelint   -----settings begin-----
+
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": false,
+
+  //stylelint   -----settings end-----
+
+  // eslint   -----settings begin-----
+
+  // 是否为JavaScript文件开启eslint检测
+  "eslint.enable": true,
+  // 保存之后进行lint
+  "eslint.run": "onSave",
+  // 是否启用eslint的调试模式
+  "eslint.debug": true,
+  // 保存文件时进行eslint修复(MacOS：快捷键是 command + s ),并不能修复所有问题，多数还是需要手动修复
+  "editor.codeActionsOnSave":{
+    "source.fixAll.eslint": true
+  }
+  // eslint   -----settings end-----
+  
+}
